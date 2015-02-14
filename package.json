@@ -1,0 +1,26 @@
+{
+  "name": "to-zalgo",
+  "version": "1.0.0",
+  "description": "invoke and banish zalgo",
+  "main": "index.js",
+  "devDependencies": {
+    "tape": "^3.5.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:michaelrhodes/to-zalgo.git"
+  },
+  "keywords": [
+    "zalgo",
+    "text"
+  ],
+  "author": "Michael Rhodes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelrhodes/to-zalgo/issues"
+  },
+  "homepage": "https://github.com/michaelrhodes/to-zalgo"
+}
