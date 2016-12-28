@@ -5,7 +5,7 @@ var unzalgo = require('./banish')
 var chars = require('./lib/chars')
 
 test('it works', function (assert) {
-  var text = 'zalgo-text, it come'
+  var text = 'zalgo-text, it come 💦'
   var evil = zalgo(text)
   var pure = unzalgo(evil)
   assert.equal(chars.pattern.test(text), false)

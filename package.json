@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "invoke and banish zalgo",
   "main": "index.js",
+  "dependencies": {
+    "unicode-string": "^1.0.0"
+  },
   "devDependencies": {
     "tape": "^3.5.0"
   },

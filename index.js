@@ -1,3 +1,4 @@
+var split = require('unicode-string/chars')
 var chars = require('./lib/chars')
 
 var rand = function (max) {
@@ -5,7 +6,7 @@ var rand = function (max) {
 }
 
 module.exports = function (text, options) {
-  text = text || '   he comes   '
+  text = split(text || '   he comes   ')
   options = options || {}
 
   var counts
@@ -18,6 +19,12 @@ module.exports = function (text, options) {
 
   for (var i = 0, l = text.length; i < l; i++) {
     if (chars.pattern.test(text[i])) {
+      continue
+    }
+
+    // Don’t mess with emoji
+    if (text[i].length > 1) {
+      result += text[i]
       continue
     }
 
