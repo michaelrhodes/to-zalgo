@@ -1,6 +1,6 @@
 {
   "name": "to-zalgo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "invoke and banish zalgo",
   "main": "index.js",
   "dependencies": {
